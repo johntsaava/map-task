@@ -1,8 +1,8 @@
 export function Component() {
   return (
-    <div>
-      <h1>Home</h1>
-    </div>
+    <main className="container">
+      <h1 className="text-3xl font-bold underline">Hello world!</h1>
+    </main>
   );
 }
 
