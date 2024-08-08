@@ -21,7 +21,7 @@ export function useDraw(mapRef: React.MutableRefObject<mapboxgl.Map | undefined>
     mapRef.current?.on('load', () => {
       mapRef.current?.addControl(draw);
     });
-  });
+  }, [mapRef]);
 
   return drawRef;
 }
