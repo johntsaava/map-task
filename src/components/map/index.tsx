@@ -2,10 +2,10 @@ import React from 'react';
 
 import mapboxgl from 'mapbox-gl';
 
+import { Toolbar } from './components/toolbar';
 import { MapContext } from './context/map';
 import { useDraw } from './hooks/use-draw';
 import { useMap } from './hooks/use-map';
-import { Toolbar } from './toolbar';
 
 import 'mapbox-gl/dist/mapbox-gl.css';
 
