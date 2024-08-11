@@ -20,7 +20,7 @@ export function Map() {
   const mapRef = useMap(mapContainerRef);
   const drawRef = useDraw(mapRef);
   const { tools, activeToolId } = useTools(mapRef, drawRef);
-  const { features, handleRemoveFeature } = useFeatures(mapRef);
+  const { features, handleRemoveFeature } = useFeatures(mapRef, drawRef);
 
   return (
     <>

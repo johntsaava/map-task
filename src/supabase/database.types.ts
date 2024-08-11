@@ -12,18 +12,21 @@ export type Database = {
       features: {
         Row: {
           created_at: string
+          feature_id: string | null
+          feature_value: Json | null
           id: number
-          value: Json | null
         }
         Insert: {
           created_at?: string
+          feature_id?: string | null
+          feature_value?: Json | null
           id?: number
-          value?: Json | null
         }
         Update: {
           created_at?: string
+          feature_id?: string | null
+          feature_value?: Json | null
           id?: number
-          value?: Json | null
         }
         Relationships: []
       }
